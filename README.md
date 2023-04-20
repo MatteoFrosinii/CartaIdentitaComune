@@ -1,18 +1,13 @@
-## Getting Started
+## Programma Thread Carta Identita
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Scrivere un programma Java con i thread per simulare la seguente situazione:
 
-## Folder Structure
+Supponiamo di trovarci allo sportello del comune che rilascia le carte d'identità e  supponiamo che ci siano 5 richiedenti in fila pronti per richiedere il documento.
+Quando arriva il proprio turno sarà consegnato al richiedente un modulo da compilare. 
 
-The workspace contains two folders by default, where:
+Per non bloccare la fila, il richiedente successivo potrà nel frattempo richiedere il servizio allo stesso sportello. Quindi a tutti i richiedenti sarà consegnato il modulo da compilare, la fila sarà molto veloce e in parallelo diverse persone saranno occupate a compilare il modulo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Ogni richiedente potrebbe metterci un tempo variabile da 1 a 5 secondi per compilare il modello, il primo che finirà indipendentemente dalla sua posizione della fila iniziale potrà richiedere la stampa della propria carta d'identità. 
+Questa sarà stampata in ogni caso in 3 secondi.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Usare delle stampe significative per rendere l'esecuzione del programma autoesplicativa
